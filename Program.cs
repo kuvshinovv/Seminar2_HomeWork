@@ -5,6 +5,19 @@
 918 -> 1 */
 
 
+void func(){
+    int number = new Random().Next(99, 1000);
+    Console.WriteLine("Рандомно программа выбрала трехзначное число: " + number);
+
+    int dvachisla = number / 10;
+    int second = dvachisla % 10;
+    Console.WriteLine("Вторая цифра этого трехзначного числа: " + second);
+}
+
+
+func();
+
+
 
 
 
