@@ -5,7 +5,7 @@
 918 -> 1 */
 
 
-void func(){
+/* void func(){
     int number = new Random().Next(99, 1000);
     Console.WriteLine("Рандомно программа выбрала трехзначное число: " + number);
 
@@ -15,7 +15,7 @@ void func(){
 }
 
 
-func();
+func(); */
 
 
 
@@ -31,6 +31,69 @@ func();
 645 -> 5
 78 -> третьей цифры нет
 32679 -> 6 */
+
+/* void func(int num){
+    
+    if (num > 99 && num <= 1000){
+        int number3 = num % 10;
+        Console.WriteLine("Третья цифра этого трехзначного числа: " + number3);
+    }
+    else if(num > 1000 && num <= 10000){
+        int tmp = num % 100;
+        int number3 = tmp / 10;
+
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+    }
+    else if(num > 10000 && num <= 100000){
+        int tmp = num % 1000;
+        int number3 = tmp / 100;
+
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+    }
+    else if(num > 100000 && num <= 1000000){
+        int tmp = num % 10000;
+        int number3 = tmp / 1000;
+
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+    }
+    else if(num > 1000000 && num <= 10000000){
+        int tmp = num % 100000;
+        int number3 = tmp / 10000;
+
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+    }
+    else if(num > 10000000 && num <= 100000000){
+        int tmp = num % 1000000;
+        int number3 = tmp / 100000;
+
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+    }
+   else if(num > 100000000 && num <= 1000000000){   
+        int tmp = num % 10000000;
+        int number3 = tmp / 1000000;
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+        
+    }
+    else if(num > 1000000000 && num <= 1999999999){   
+        int tmp = num % 100000000;
+        int number3 = tmp / 10000000;
+        Console.WriteLine("Третья цифра введённого числа: " + number3 );
+        Console.WriteLine("Значение числа >= 1000000000, выходят за рамки значений 32bit: " );
+    }
+    else{
+        Console.WriteLine("Третьей цифры в ведённом числе НЕТ!");
+    }
+}
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());  // Для чисел более 10 знаков не хватает значений 32бит, 
+                                                   // попроболвал поставить 64 битную конвертацию, но выдало ошибку почему то :)  
+
+func(number);
+ */
+
+
+
+
 
 
 
